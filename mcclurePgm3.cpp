@@ -50,7 +50,12 @@ This technique also can be used to translate the diamond to the winning position
 Last thing to note, in order to get the specific scaling factor of the diamond, I had to 
 come up with a formula since the diamond is a wire octahedron. I used the formula,
 25 * (sqrt(2) / 2), to get the correct scaling factor. I believe that this formula can 
-get all line segments that make up the octahedron to be the correct length.
+get all line segments that make up the octahedron to be the correct length. To calculate
+the gravity, I had to use the same formula we learned in class, but I had to alter how 
+much the time gets incremented along with the call of the timer event handler so I could
+meet the requirements of redrawing the animation 15 times per second. The values I chose 
+for the timer event handler and the time step increment were based around that specific
+requirement.
 
 *****************************************************************************************/
 
